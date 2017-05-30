@@ -1,7 +1,26 @@
 * {
     box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
-header#naglowek h1{
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+#kontener {
+    height: 100vh;
+    background: url(../obrazy/man-1.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+#naglowek {
+    position: absolute;
     text-align: left;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #fff;
 }
