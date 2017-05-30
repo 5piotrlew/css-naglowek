@@ -24,8 +24,6 @@ body {
     color: #fff;
 }
 
-
-
 @media (max-width: 1170px) {
     #naglowek {
         text-align: right;
@@ -40,31 +38,27 @@ body {
         background: url(../obrazy/man-2.jpg) center no-repeat fixed;
         background-size: cover;
     }
-    h2{
-    padding-right: 216px;
-}
-    
-    
+    h2 {
+        padding-right: 216px;
+    }
 }
 
 @media (max-width: 992px) {
-    #naglowek {        
+    #naglowek {
         text-align: center;
         width: 100%;
         left: 0;
-        top: 80%;
+        top: 60%;
         right: 0;
         transform: translateY(-50%);
         color: black;
     }
     #kontener {
         height: 50vh;
-        background: url(../obrazy/man-1.jpg) top no-repeat fixed;
-        background-size: cover;
+        background: url(../obrazy/man-1.jpg) top no-repeat;
+        background-size: contain;
     }
-        h2{
-    padding-right: 0;
-}
-    
-    
+    h2 {
+        padding-right: 0;
+    }
 }
