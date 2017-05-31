@@ -3,6 +3,10 @@
     font-family: Verdana, Geneva, sans-serif;
 }
 
+figure.man2 img {
+    display: none;
+}
+
 body {
     margin: 0 auto;
 }
@@ -13,7 +17,7 @@ body {
     background-size: cover;
 }
 
-#naglowek {
+#main-header {
     position: absolute;
     text-align: left;
     width: 100%;
@@ -25,7 +29,7 @@ body {
 }
 
 @media (max-width: 1170px) {
-    #naglowek {
+    #main-header {
         text-align: right;
         width: 100%;
         left: 0;
@@ -39,26 +43,33 @@ body {
         background-size: cover;
     }
     h2 {
-        padding-right: 216px;
+        padding-right: 9.6em;
     }
 }
 
 @media (max-width: 992px) {
-    #naglowek {
-        text-align: center;
-        width: 100%;
-        left: 0;
-        top: 60%;
-        right: 0;
-        transform: translateY(-50%);
-        color: black;
-    }
     #kontener {
-        height: 50vh;
-        background: url(../obrazy/man-1.jpg) top no-repeat;
-        background-size: contain;
+        background: none;
     }
+    #main-header {
+        position: relative;
+        color: black;
+        text-align: center;
+        padding: 0;
+        transform: none;
+        height: 0;
+        width: 100%;
+        top: 0;
+    }
+    #main-header h1,
     h2 {
-        padding-right: 0;
+        font-size: 1em;
+        padding: 0;
+    }
+    h2 {}
+    figure.man2 img {
+        display: inline-block;
+        width: 100%;
+        height: 50%;
     }
 }
