@@ -1,23 +1,31 @@
+/* POCZĄTEK KODU DLA ROZDZIELCZOŚCI POWYŻEJ 1170px*/
+
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, sans-serif;
-}
-
-figure.man2 img {
-    display: none;
 }
 
 body {
     margin: 0 auto;
 }
 
-#kontener {
+div#container section.man2 img {
+    display: none;
+}
+
+div#container {
     height: 100vh;
     background: url(../obrazy/man-1.jpg) center no-repeat fixed;
     background-size: cover;
 }
 
-#main-header {
+
+/* NAGŁÓWEK HORYZONTALNIE DO LEWEJ*/
+
+
+/* WERTYKALNIE DO ŚRODKA */
+
+div#container header#main-header {
     position: absolute;
     text-align: left;
     width: 100%;
@@ -28,8 +36,14 @@ body {
     color: #fff;
 }
 
+
+/* KONIEC KODU DLA ROZDZIELCZOŚCI POWYŻEJ 1170px*/
+
+
+/* REGUŁA DLA ROZDZIELCZOŚCI PONIŻEJ 1170px */
+
 @media (max-width: 1170px) {
-    #main-header {
+    div#container header#main-header {
         text-align: right;
         width: 100%;
         left: 0;
@@ -37,21 +51,26 @@ body {
         right: 0;
         transform: translateY(-50%);
     }
-    #kontener {
+    div#container {
         height: 70vh;
         background: url(../obrazy/man-2.jpg) center no-repeat fixed;
         background-size: cover;
     }
-    h2 {
+    div#container header#main-header h2 {
         padding-right: 9.6em;
     }
 }
 
+
+/* REGUŁA DLA ROZDZIELCZOŚCI PONIŻEJ 992px */
+
 @media (max-width: 992px) {
-    #kontener {
+    /* UKRYCIE OBRAZKA W TLE */
+    div#container {
         background: none;
     }
-    #main-header {
+    /* NAGŁÓWEK POD OBRAZKIEM */
+    div#container header#main-header {
         position: relative;
         color: black;
         text-align: center;
@@ -61,13 +80,13 @@ body {
         width: 100%;
         top: 0;
     }
-    #main-header h1,
-    h2 {
-        font-size: 1em;
+    /*ZMIANA ROZMIARU CZCIONKI DLA NAGŁÓWKA I WYRÓWNANIE GO*/
+    div#container header#main-header h2 {
+        font-size: 1.5em;
         padding: 0;
     }
-    h2 {}
-    figure.man2 img {
+    /* ODKRYCIE OBRAZU SECTION*/
+    div#container section.man2 img {
         display: inline-block;
         width: 100%;
         height: 50%;
